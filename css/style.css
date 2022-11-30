@@ -1,0 +1,124 @@
+.flex-container {
+  height: 150px;
+  display: flex;
+  background-color: aquamarine;
+
+  /* row-reverse, column */
+  flex-direction: row;
+
+  /* flex-start, flex-end, center, space-beteween, space-around  */
+  justify-content: space-evenly;
+
+  /* flex-start, flex-end, center */
+  align-items: flex-start;
+
+  /* align-content: space-evenly; */
+}
+
+.flex-container > div {
+  border: 1px solid black;
+  width: 100px;
+  background-color: yellow;
+}
+
+#style-sixth {
+  width: 200px;
+}
+
+/* Responsive design */
+.div-media {
+  background-color: yellow;
+  height: 100px;
+  display: none;
+
+  /* visibility: hidden; */
+}
+
+p {
+  font-size: 20px;
+}
+
+/* Responsive images */
+img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* mobile  min value till 400px */
+@media screen and (max-width: 400px) {
+  .div-media {
+    display: block;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}
+
+/* 600px and above
+small devices (tablets & large phones) */
+@media screen and (min-width: 600px) {
+  .div-media {
+    display: block;
+    background-color: orange;
+  }
+
+  p {
+    font-size: 10px;
+    color: blue;
+  }
+}
+
+/* 768px and above */
+@media screen and (min-width: 768px) {
+  .div-media {
+    display: block;
+    background-color: teal;
+  }
+
+  p {
+    font-size: 20px;
+    color: blue;
+  }
+}
+
+/* 992px and above */
+@media screen and (min-width: 992px) {
+  .div-media {
+    display: block;
+    background-color: green;
+  }
+
+  p {
+    font-size: 20px;
+    color: orange;
+  }
+}
+
+/* 1000 and above */
+@media screen and (min-width: 1000px) {
+  .div-media {
+    display: block;
+    background-color: green;
+  }
+
+  p {
+    font-size: 20px;
+    color: orange;
+  }
+}
+
+/* 1200 px and above */
+@media screen and (min-width: 1200px) {
+  .div-media {
+    display: block;
+    background-color: pink;
+  }
+
+  p {
+    font-size: 20px;
+    color: orange;
+  }
+}
+
